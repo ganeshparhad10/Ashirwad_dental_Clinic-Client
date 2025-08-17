@@ -1,0 +1,134 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #09010f; Dark teal */
+  background: linear-gradient(45deg, #2E073F, #1a1702);  /* Diagonal */
+   background: linear-gradient(135deg, #203964, #516635); /* Another diagonal */
+
+  /* background: #1A1A1D; */
+  color: rgb(232, 233, 228);
+  padding: 15px 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar .logo a{
+  font-size: 22px;
+  font-weight: bold;
+  color: #AEEEEE; /* Golden accent */
+  text-decoration: none;
+}
+.navbar .logo a:hover{
+  color:bisque;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  color: #F8F9FA;
+  text-decoration: none;
+  font-size: 16px;
+   font-family: 'Montserrat', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #ffd700;
+}
+
+.navbar .contact-btn {
+  background-color: #ffd700;
+  color: #0c3c4c;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.navbar .contact-btn:hover {
+  background-color: white;
+  color: #0c3c4c;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.logo i {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.logo a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Mobile responsive */
+/* Tablet responsiveness */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 15px 20px;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    gap: 15px;
+  }
+
+  .navbar .contact-btn {
+    margin-top: 10px;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar .logo {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar .contact-btn {
+    align-self: flex-start;
+    margin-top: 10px;
+  }
+}
+

@@ -1,0 +1,147 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #348ab9, #FFFBDE);
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-section {
+  padding: 60px 20px;
+  background: transparent; /* allows gradient to show */
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-title {
+  font-size: 32px;
+  color: #0c3c4c;
+  margin-bottom: 10px;
+}
+
+.contact-subtitle {
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.contact-form {
+  background: rgba(255, 255, 255, 0.85); /* translucent white */
+  backdrop-filter: blur(10px); /* frosted glass effect */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-group label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="time"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0c3c4c;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-row .form-group {
+  flex: 1;
+  min-width: 45%;
+}
+
+/* Button Styling */
+button[type="submit"] {
+  background-color: #0c3c4c;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+button:hover:enabled {
+  background-color: #095566;
+}
+
+/* Messages */
+.error-msg {
+  color: #d9534f;
+  margin-top: 10px;
+}
+
+.success-msg {
+  color: #28a745;
+  margin-top: 10px;
+}
+
+/* 🌐 Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-row .form-group {
+    min-width: 100%;
+  }
+
+  .contact-title {
+    font-size: 26px;
+  }
+
+  .contact-subtitle {
+    font-size: 14px;
+  }
+
+  button[type="submit"] {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 20px;
+  }
+
+  .contact-title {
+    font-size: 24px;
+  }
+
+  .contact-subtitle {
+    font-size: 13px;
+  }
+}

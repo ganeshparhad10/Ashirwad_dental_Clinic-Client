@@ -1,0 +1,60 @@
+<section class="contact-section">
+  <h2 class="contact-title">Book an Appointment</h2>
+  <p class="contact-subtitle">We’re here to take care of your smile. Schedule your visit today.</p>
+
+  <form class="contact-form" (ngSubmit)="submitForm()" #formRef="ngForm">
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        [(ngModel)]="appointment.name"
+        required
+        placeholder="Enter your full name"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        [(ngModel)]="appointment.phone"
+        required
+        pattern="^[0-9]{10}$"
+        placeholder="e.g. 9876543210"
+      />
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="date">Appointment Date</label>
+        <input
+          type="date"
+          id="date"
+          name="date"
+          [(ngModel)]="appointment.date"
+          required
+          [min]="today"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="time">Preferred Time</label>
+        <input
+          type="time"
+          id="time"
+          name="time"
+          [(ngModel)]="appointment.time"
+          required
+        />
+      </div>
+    </div>
+
+    <button type="submit" [disabled]="!formRef.valid">Book Appointment</button>
+    <p *ngIf="errorMsg" class="error-msg">{{ errorMsg }}</p>
+    <p *ngIf="successMsg" class="success-msg">{{ successMsg }}</p>
+  </form>
+</section>
