@@ -1,27 +1,40 @@
-# AshirwadDental
+# 🦷 Ashirwad Dental Clinic Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
+A modern and responsive **frontend website** built for **Ashirwad MultiSpeciality Dental Clinic & Implant Center**.  
+The site is designed to showcase dental services, provide clinic details, and enable patients to book appointments online.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Features
 
-## Code scaffolding
+- ✅ Responsive and mobile-friendly design  
+- ✅ Modern UI with clean typography and branding  
+- ✅ Services section highlighting treatments offered  
+- ✅ Appointment booking form with **Web3Forms** integration (sends email notifications directly to the doctor)  
+- ✅ Contact page with Google Maps location  
+- ✅ Built with a focus on **UI/UX, accessibility, and performance**  
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🛠 Tech Stack
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Frontend Framework**: Angular  
+- **Styling**: HTML5, CSS3, TypeScript  
+- **Forms & Integration**: Web3Forms API  
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## 📂 Project Structure
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+ashirwad-dental-clinic/
+├── src/
+│ ├── app/
+│ │ ├── components/ # Angular components (Navbar, Footer, etc.)
+│ │ ├── pages/ # Main pages (Home, Services, Contact)
+│ │ └── app.module.ts
+│ ├── assets/ # Images, icons, etc.
+│ └── index.html
+├── angular.json
+├── package.json
+└── README.md
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
