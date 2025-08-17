@@ -7,12 +7,12 @@ The site is designed to showcase dental services, provide clinic details, and en
 
 ## 🚀 Features
 
-- ✅ Responsive and mobile-friendly design  
-- ✅ Modern UI with clean typography and branding  
-- ✅ Services section highlighting treatments offered  
-- ✅ Appointment booking form with **Web3Forms** integration (sends email notifications directly to the doctor)  
-- ✅ Contact page with Google Maps location  
-- ✅ Built with a focus on **UI/UX, accessibility, and performance**  
+-  Responsive and mobile-friendly design  
+-  Modern UI with clean typography and branding  
+-  Services section highlighting treatments offered  
+-  Appointment booking form with **Web3Forms** integration (sends email notifications directly to the doctor)  
+-  Contact page with Google Maps location  
+-  Built with a focus on **UI/UX, accessibility, and performance**  
 
 ---
 
@@ -29,12 +29,11 @@ The site is designed to showcase dental services, provide clinic details, and en
 ashirwad-dental-clinic/
 ├── src/
 │ ├── app/
-│ │ ├── components/ # Angular components (Navbar, Footer, etc.)
-│ │ ├── pages/ # Main pages (Home, Services, Contact)
-│ │ └── app.module.ts
-│ ├── assets/ # Images, icons, etc.
-│ └── index.html
-├── angular.json
-├── package.json
-└── README.md
-
+│ │ ├── components/ # Reusable Angular components (Navbar, Footer, etc.)
+│ │ ├── pages/ # Main pages (Home, Services, Contact, Appointment)
+│ │ └── app.module.ts # Root Angular module
+│ ├── assets/ # Images, icons, and static files
+│ └── index.html # Main entry point
+├── angular.json # Angular project configuration
+├── package.json # Project dependencies and scripts
+└── README.md # Project documentation
