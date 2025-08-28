@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
   appointment: any = {
-    access_key: '18cd4b8e-0849-408a-9a6d-e848c3f548d6', // 🔑 Your Web3Forms access key (from dashboard)
+    access_key: '539fc23b-3a94-410b-a730-a587fe008582', // 🔑 Your Web3Forms access key (from dashboard)
     name: '',
     phone: '',
     date: '',
     time: '',
     subject: '`🦷 New Appointment from ',     // ✅ custom subject line for doctor's email
-    from_name: 'Ashirwad Dental Clinic' ,// ✅ will show who sent the email
-    emails: 'ganeshparhad42@gmail.com'
+    from_name: 'Ashirwad Dental Clinic' // ✅ will show who sent the email
+    //emails: 'ganeshparhad42@gmail.com'
   };
 
   today: string = '';
@@ -58,7 +58,7 @@ export class ContactComponent implements OnInit {
 
   resetForm(): void {
     this.appointment = {
-      access_key: '18cd4b8e-0849-408a-9a6d-e848c3f548d6', // keep your key here
+      access_key: '539fc23b-3a94-410b-a730-a587fe008582', // keep your key here
       name: '',
       phone: '',
       date: '',
