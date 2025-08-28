@@ -3,6 +3,9 @@
   <p class="contact-subtitle">We’re here to take care of your smile. Schedule your visit today.</p>
 
   <form class="contact-form" (ngSubmit)="submitForm()" #formRef="ngForm">
+    <!-- Hidden field for Web3Forms -->
+    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" #accessKey="ngModel" [(ngModel)]="appointment.access_key" />
+
     <div class="form-group">
       <label for="name">Full Name</label>
       <input
