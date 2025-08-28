@@ -1,31 +1,26 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
 }
-
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #09010f; Dark teal */
-  background: linear-gradient(45deg, #2E073F, #1a1702);  /* Diagonal */
-   background: linear-gradient(135deg, #203964, #516635); /* Another diagonal */
-
-  /* background: #1A1A1D; */
+  background: linear-gradient(135deg, #203964, #516635);
   color: rgb(232, 233, 228);
   padding: 15px 30px;
   font-family: 'Segoe UI', sans-serif;
 }
 
-.navbar .logo a{
+/* ✅ Logo */
+.navbar .logo a {
   font-size: 22px;
   font-weight: bold;
-  color: #AEEEEE; /* Golden accent */
+  color: #AEEEEE;
   text-decoration: none;
 }
-.navbar .logo a:hover{
-  color:bisque;
+.navbar .logo a:hover {
+  color: bisque;
 }
 
 .navbar ul {
@@ -40,7 +35,7 @@ body {
   color: #F8F9FA;
   text-decoration: none;
   font-size: 16px;
-   font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   transition: color 0.3s ease;
 }
 
@@ -55,7 +50,7 @@ body {
   border-radius: 5px;
   text-decoration: none;
   font-weight: 500;
-   font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar .contact-btn:hover {
@@ -83,9 +78,7 @@ body {
   text-decoration: none;
 }
 
-
-/* Mobile responsive */
-/* Tablet responsiveness */
+/* -------------------- TABLET -------------------- */
 @media (max-width: 1024px) {
   .navbar {
     flex-wrap: wrap;
@@ -105,7 +98,7 @@ body {
   }
 }
 
-/* Mobile responsiveness */
+/* -------------------- MOBILE -------------------- */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -113,51 +106,26 @@ body {
     gap: 10px;
   }
 
-  .navbar .logo {
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .navbar .contact-btn {
-    align-self: flex-start;
-    margin-top: 10px;
-  }
-}
-
-
-/* Hamburger Icon */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background: white;
-  border-radius: 3px;
-  transition: 0.3s;
-}
-
-/* Show hamburger on mobile */
-@media (max-width: 768px) {
-  .hamburger {
+  /* ✅ New wrapper for logo + hamburger */
+  .nav-header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* ✅ Hamburger only on mobile */
+  .hamburger {
+    display: flex !important;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
   }
 
   .navbar ul {
     display: none;
     flex-direction: column;
+    align-items: flex-start;
     gap: 12px;
     width: 100%;
     margin-top: 10px;
@@ -166,6 +134,21 @@ body {
   .navbar ul.active {
     display: flex;
   }
+
+  .navbar .contact-btn {
+    align-self: flex-start;
+    margin-top: 10px;
+  }
 }
 
-
+/* -------------------- HAMBURGER ICON -------------------- */
+.hamburger {
+  display: none; /* hidden on desktop */
+}
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+  transition: 0.3s;
+}
