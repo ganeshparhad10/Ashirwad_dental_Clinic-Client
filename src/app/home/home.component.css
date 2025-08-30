@@ -6,6 +6,18 @@
   box-sizing: border-box;
 }
 
+/* Apply Urbanist font to all sections except hero */
+body {
+  font-family: 'Urbanist', sans-serif;
+}
+
+/* Keep hero section using Montserrat */
+.hero {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
 /* .hero {
   border: 1px solid black;
   display: flex;
@@ -297,7 +309,7 @@
   position: relative;
 }
 
-.trust-title::after {
+/* .trust-title::after {
   content: '';
   display: block;
   width: 60px;
@@ -305,7 +317,7 @@
   background: #00b894;
   margin: 12px auto 0;
   border-radius: 2px;
-}
+} */
 
 .trust-features {
   display: grid;
@@ -524,4 +536,105 @@
     height: auto;
   }
 }
+
+/* FAQs CSS */
+
+/* FAQs Section (styled same as Trust Section) */
+.faq-section {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #c1edd3, rgb(216, 236, 253));
+  /* background-color: beige; */
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.faq-title {
+  font-size: 2rem;
+  color: #0c3c4c;
+  margin-bottom: 10px;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-section .subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+
+.faq-item {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.faq-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #203964;
+}
+
+.arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+/* Accordion animation */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 5px;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 200px; /* adjust if answers are longer */
+  padding: 10px 5px;
+}
+
+@media (max-width: 600px) {
+  .faq-title {
+    font-size: 1.5rem;
+  }
+
+  .faq-item {
+    padding: 15px;
+  }
+
+  .faq-question h4 {
+    font-size: 16px;
+  }
+
+  .faq-section {
+    padding: 40px 15px;
+  }
+}
+
 
